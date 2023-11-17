@@ -1,0 +1,28 @@
+#Ass-1
+n=int(input())
+l=list(map(int,input().split()))
+k=int(input())
+v=list(set(l))
+v.sort(reverse=True)
+print(v[-k])
+
+#Ass-2
+def kLargest(self,li,n,k):
+        # code here
+        li.sort()
+        el=[]
+        for i in range(1,k+1):
+            el.append(li[-i])
+        el.sort(reverse=True)
+        return el
+
+#Ass-3
+def getMinMax( a, n):
+    '''maxx=a[0]
+    minn=a[0]
+    for i in range(n):
+        if a[i]>maxx:
+            maxx=a[i]
+        if a[i]<minn:
+            minn=a[i]'''
+    return min(a),max(a)
